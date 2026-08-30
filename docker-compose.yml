@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-brewtech_db}
+      POSTGRES_USER: ${POSTGRES_USER:-brewtech_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in your environment}
+    ports:
+      - '5432:5432'
+    volumes:
+      - brewtech_postgres:/var/lib/postgresql/data
+volumes:
+  brewtech_postgres:
