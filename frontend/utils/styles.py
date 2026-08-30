@@ -25,6 +25,7 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color: var(--in
     background-size: 18px 18px;
 }
 [data-testid="stHeader"] { background: rgba(244, 247, 245, 0.88); backdrop-filter: blur(12px); }
+[data-testid="stAppDeployButton"] { display: none; }
 [data-testid="stMainBlockContainer"] { max-width: 1480px; padding: 2rem 2.5rem 4rem; }
 
 h1, h2, h3 { font-family: 'Manrope', sans-serif; color: var(--ink); letter-spacing: 0; }

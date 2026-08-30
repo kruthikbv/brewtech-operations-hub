@@ -1,0 +1,9 @@
+.git
+.github
+.history
+.venv
+**/__pycache__
+**/*.pyc
+**/.env
+**/*.sqlite3
+backend/staticfiles
